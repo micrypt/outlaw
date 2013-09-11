@@ -1,4 +1,6 @@
 outlaw
 ======
+basically an image slider.
+still a work in progress
 
-image slider
+live view: [http://joey.so/outlaw](http://joey.so/outlaw)
