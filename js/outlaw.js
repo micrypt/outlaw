@@ -3,3 +3,9 @@ $(document).ready(function () {
         $("#imgSmall").toggleClass("imgLarge");
     });
 });
+
+$('img').bind('touchstart', function (e) {
+    $(this).trigger('click');
+    e.preventDefault();
+});
+ 
