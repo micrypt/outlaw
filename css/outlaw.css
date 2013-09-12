@@ -49,11 +49,12 @@ body {
     line-height: 1.4em;
     width:50%;
     max-width:600px;
-    margin:60px auto
+    margin:0px auto
 }
 
 h1 {
     font-size:3em;
+    margin-top:60px;
     margin-bottom:40px;
 }
 
@@ -70,15 +71,19 @@ p {
     cursor:-moz-zoom-in;
     margin:0px 0px 30px 0px;
 }
+
 .imgLarge {
-    position:absolute;
-    top:0;
+    position:fixed;
+    bottom:0;
     left:0;
+    right:0;
+    margin:0 auto!important;
     width:100%;
+    height:100%;
+    max-width:900px;
     height:auto;
     cursor:-webkit-zoom-out!important;
     cursor:-moz-zoom-out!important;
-    margin:0!important;
 }
 
 .link {
