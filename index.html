@@ -4,29 +4,60 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-        <meta name="description" content="">
+        <meta name="description" content="Outlaw is a lightweight simplistic gallery">
         <link rel="stylesheet" type="text/css" href="css/outlaw.css">
         <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-        <title>Outlaw &#8212; Image viewer</title>
+        <title>Outlaw &#8212; A simplistic &amp; lightweight gallery</title>
+
+        <script type="text/javascript" src="//use.typekit.net/ind0hmb.js"></script>
+        <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
         <!--[if IE]>
             <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]-->
     </head>
     
     <body>
-        <h1>Outlaw</h1>
-        <p>Aenean mollis sapien pulvinar enim porttitor, ut vehicula nibh tincidunt. Ut vitae ultricies mi. Phasellus facilisis pulvinar neque a ultricies. Mauris a augue lorem. Nulla facilisi. Quisque quis semper ligula. Ut ante lectus, aliquet sed dui vel, congue posuere arcu. Nullam velit nibh, laoreet nec consequat quis, pulvinar in justo. Duis in porta felis. Nam pretium sem ut semper scelerisque.</p>
-        <p>Aenean mollis sapien pulvinar enim porttitor, ut vehicula nibh tincidunt. Ut vitae ultricies mi. Phasellus facilisis pulvinar neque a ultricies. Mauris a augue lorem. Nulla facilisi. Quisque quis semper ligula. Ut ante lectus, aliquet sed dui vel, congue posuere arcu. Nullam velit nibh, laoreet nec consequat quis, pulvinar in justo. Duis in porta felis. Nam pretium sem ut semper scelerisque.</p>
-        
-        <img id="imgSmall" alt="Supreme" src="img/1.jpg" />
-        
-        <p>Aenean mollis sapien pulvinar enim porttitor, ut vehicula nibh tincidunt. Ut vitae ultricies mi. Phasellus facilisis pulvinar neque a ultricies. Mauris a augue lorem. Nulla facilisi. Quisque quis semper ligula. Ut ante lectus, aliquet sed dui vel, congue posuere arcu. Nullam velit nibh, laoreet nec consequat quis, pulvinar in justo. Duis in porta felis. Nam pretium sem ut semper scelerisque.</p>
-        <p>Aenean mollis sapien pulvinar enim porttitor, ut vehicula nibh tincidunt. Ut vitae ultricies mi. Phasellus facilisis pulvinar neque a ultricies. Mauris a augue lorem. Nulla facilisi. Quisque quis semper ligula. Ut ante lectus, aliquet sed dui vel, congue posuere arcu. Nullam velit nibh, laoreet nec consequat quis, pulvinar in justo. Duis in porta felis. Nam pretium sem ut semper scelerisque.</p>
-        <p>Aenean mollis sapien pulvinar enim porttitor, ut vehicula nibh tincidunt. Ut vitae ultricies mi. Phasellus facilisis pulvinar neque a ultricies. Mauris a augue lorem. Nulla facilisi. Quisque quis semper ligula. Ut ante lectus, aliquet sed dui vel, congue posuere arcu. Nullam velit nibh, laoreet nec consequat quis, pulvinar in justo. Duis in porta felis. Nam pretium sem ut semper scelerisque.</p>
-        
-        <a class="link" href="http://github.com/dope/outlaw">GitHub Project</a>
-        <br /><br /><br /><br />
-        
+     
+        <div class="wrap">
+            <h1>Outlaw</h1>
+            <p>A simplistic &amp; lightweight gallery</p>
+
+            <h2>Getting Started</h2>
+            <p>In order to get Outlaw set up correctly you need to link the JS &amp; CSS file</p>
+            <script src="https://gist.github.com/dope/75bbc10037a9f16c5963.js"></script>
+            <br />
+
+            <h3>Needs</h3>
+            <p>Outlaw only has one dependency and that's <a href="http://jquery.com" class="link">jQuery</a>, so obviously it will not work without it.</p>
+
+            <h3>CSS</h3>
+            <p>Isn't much going on here, apart from setting the widths of the normal state of the gallery and the toggled version. Also supports zoom-in &amp; zoom-out cursors for IE (Thanks to <a href="http://twitter.com/extramaster" class="link">Andy</a>)</p>
+            <script src="https://gist.github.com/dope/d934dadd50d4602252b8.js"></script>
+            <br />
+
+            <h1>Example Gallery</h1>
+            <p>Outlaw uses a pretty cool script where on the toggled state it perfectly centers the div in to the window size</p>
+            <!-- Full Image Width -->
+            <img class="imgSmall" alt="Thumb 1" src="img/thumb-1.jpg" />
+            <img class="imgSmall" alt="Thumb 2" src="img/thumb-2.jpg" />
+            <img class="imgSmall" alt="Thumb 3" src="img/thumb-3.jpg" />
+            <img class="imgSmall" alt="Thumb-4" src="img/thumb-4.jpg" />
+
+            <h2>Contribute</h2>
+            <p>I would love people to get involved with this project, there is currently a todo list on the README.md, so check that out :)</p>
+
+            <a class="link footer" href="http://github.com/dope/outlaw">GitHub Project</a>
+            <a class="link footer" href="http://github.com/dope/outlaw">Download Master</a>
+            <a class="link footer" href="http://twitter.com/joericho">@joey</a>
+
+            <br /><br />
+            <p>Copyright 2013, Joe Richardson<br />
+               Licensed under <a href="http://opensource.org/licenses/MIT" class="link">MIT</a>
+            </p>
+
+        </div>
+
         <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
         <script src="js/outlaw.js"></script>
     </body>

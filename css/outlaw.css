@@ -1,27 +1,16 @@
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-nav,
-section {
-    display: block;
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-html {
-    font-size: 100%;
-    -webkit-text-size-adjust: 100%;
-    -moz-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
-    text-size-adjust: 100%;
-}
-
-input:focus,
-textarea:focus {
-    outline: none;
+body {
+    font: 15px "ff-tisa-web-pro";
+    line-height: 1.4em;
 }
 
 a,
@@ -34,56 +23,51 @@ a:hover {
     transition: all 0.2s ease-in-out;
 }
 
-*,
-*:after,
-*:before {
-    margin: 0;
-    padding: 0;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
-body {
-    font: 15px "Montserrat";
-    line-height: 1.4em;
+.wrap {
     width:50%;
-    margin:0px auto
+    margin:0px auto;
+    max-width:900px;
+    margin-bottom:150px;
 }
 
 h1 {
     font-size:3em;
     margin-top:60px;
-    margin-bottom:40px;
+    margin-bottom:20px;
 }
 
 p {
     margin-bottom:30px;
-    line-height:180%;
-    font-size:15px;
+    line-height:160%;
+    font-size:20px;
     word-spacing:2px;
 }
 
-#imgSmall {
-    width:100%;
-    cursor:-webkit-zoom-in;
-    cursor:-moz-zoom-in;
+img.imgSmall {
+    width:100%!important;
+    height:auto!important;
+    cursor:-webkit-zoom-in!important;
+    cursor:-moz-zoom-in!important;
+    cursor:url("cur/zoomin.cur"),pointer;
     margin:0px 0px 30px 0px;
 }
 
-.imgLarge {
+img.imgLarge {
     position: fixed;
-    top:0;
+    background:#fff;
+    top:0%;
     left: 0%;
     right:0;
     margin:0 auto!important;
     display: inline-block;
     vertical-align: middle;
-    width:100%;
-    height:100%;
+    width:70%;
+	padding:1em;
+    max-width:1000px;
     height:auto;
     cursor:-webkit-zoom-out!important;
     cursor:-moz-zoom-out!important;
+    cursor:url("cur/zoomout.cur"),pointer;
     background:#fff;
 }
 
@@ -92,41 +76,40 @@ p {
     border-bottom:1px solid black;
 }
 
+.footer {
+    border:0px;
+    display:block;
+}
+
 /* small */
 @media (max-width: 480px) {
-    body {
+    .wrap {
         width:90%;
     }
-    
-    .imgLarge {
-        position:fixed;
-        left:-50%;
-        min-width:1000px; 
+
+    h1 {
+        font-size:2em;
     }
 }
 
 /* tablet */
 @media (max-width: 800px) {
-    body {
-        width:80%; 
+    .wrap {
+        width:90%;
     }
-    
-    .imgLarge {
-        position:fixed;
-        left:-20%;
-        min-width:1000px; 
-    }
+
+    h1 {
+        font-size:2em;
+    }  
 }
 
 /* small desktop */
 @media (min-width: 800px) and (max-width: 1100px) {
-    body {
-        width:60%;
+    .wrap {
+        width:80%;
     }
-    
-    .imgLarge {
-        position:fixed;
-        left:0%;
-        min-width:1000px; 
-    }
+
+    h1 {
+        font-size:3em;
+    }   
 }
