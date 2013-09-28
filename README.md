@@ -15,7 +15,7 @@ Outlaw
 ===
 Outlaw is a simplistic and lightweight gallery that toggles from a small view to a full screen view. It's also responsive and soon to be completely browser compatible.
 
-View it live [here](http://joey.so/outlaw)
+View it live [here](http://dope.github.io/outlaw)
 
 ###Getting Started
 Getting started couldn't be easier, first you need to link your stylesheet
