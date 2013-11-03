@@ -14,7 +14,7 @@ body {
 }
 
 .stop-scrolling {
-    overflow: hidden;
+    overflow-y:hidden;
 }
 
 a,
