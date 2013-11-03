@@ -13,6 +13,10 @@ body {
     line-height: 1.4em;
 }
 
+.stop-scrolling {
+    overflow: hidden;
+}
+
 a,
 a:visited,
 a:active,
@@ -21,6 +25,7 @@ a:hover {
     -webkit-transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
+    color:#000;
 }
 
 .wrap {
@@ -28,6 +33,7 @@ a:hover {
     margin:0px auto;
     max-width:900px;
     margin-bottom:150px;
+
 }
 
 h1 {
@@ -71,10 +77,6 @@ img.imgLarge {
     background:#fff;
 }
 
-.link {
-    color:black;
-    border-bottom:1px solid black;
-}
 
 .footer {
     border:0px;
