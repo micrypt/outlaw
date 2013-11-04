@@ -1,15 +1,3 @@
-outlaw
-======
-basically an image gallery.
-still a work in progress
-
-live view: [http://joey.so/outlaw](http://joey.so/outlaw) (site is down)
-
-todo:
-====
-1. create image grid/gallery
-2. create responsive alternative
-=======
 Outlaw
 ===
 Outlaw is a simplistic and lightweight gallery that toggles from a small view to a full screen view. It's also responsive and soon to be completely browser compatible.
