@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 outlaw
 ======
 basically an image gallery.
@@ -41,4 +40,3 @@ There is a lot of things I still want to do for Outlaw, so if you want to help o
 - Make browser compatible
 - Work on a wide range of devices
 - Easily change size of image classes
->>>>>>> 072b44712c3441f62eff449531b440eee8eee156
