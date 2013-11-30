@@ -25,7 +25,7 @@ function resize() {
             .height($(window).height())
             .width($(window).height() * 1.5);
     }
-
+    $(".imgSmall").find();
     $(".imgSmall").center();
 }
 
