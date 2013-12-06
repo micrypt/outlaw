@@ -9,22 +9,10 @@
 }
 
 img.outlaw {
-    width:auto!important;
     cursor:-webkit-zoom-in!important;
     cursor:-moz-zoom-in!important;
     cursor:url("cur/zoomin.cur"),pointer;
     margin:0px 0px 30px 0px;
-}
-
-.outlaw-overlay {
-    display: block;
-    background: white;
-    opacity: 0.85;
-    width: 100%!important;
-    height:100%!important;
-    position: fixed;
-    top: 0;
-    left: 0;
 }
 
 .outlaw.large {
@@ -43,6 +31,17 @@ img.outlaw {
     cursor:-moz-zoom-out!important;
     cursor:url("cur/zoomout.cur"),pointer;
     background:#fff;
+}
+
+.outlaw-overlay {
+    display: block;
+    background: white;
+    opacity: 0.85;
+    width: 100%!important;
+    height:100%!important;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .stop-scrolling {
