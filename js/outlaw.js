@@ -13,23 +13,30 @@
         var $targetImgs = $(target);
         $targetImgs.filter(':first').before($overlay);
 
+        var react = function (target) {
+            var $this = target;
+            $overlay.toggle();
+            $this.toggleClass(alt);
+            // Disable scrolling once zoomed in
+            $body.toggleClass('stop-scrolling');
+        };
+
         $targetImgs.each(function(index){
             var $this = $(this);
             $this.addClass('outlaw');
-            $this.click(function () {
-                var $this = $(this);
-                $overlay.toggle();
-                $this.toggleClass(alt);
-                // Disable scrolling once zoomed in
-                $body.toggleClass('stop-scrolling');
+            $this.click(function(){
+                react($this);
             });
-            
-            // Off click function
-            $body.click(function (event) {
-                if (!$(event.target).closest('.outlaw.large').length) {
-                    $('outlaw-large').removeClass('large');
-               }
-            });
+        });
+
+        // Body off click function
+        $body.click(function (ev) {
+            var $large = $('.outlaw.large'),
+                $target = $(ev.target);
+            if ($large.length && !$target.is($large)) {
+                react($large);
+                ev.preventDefault();
+            }
         });
     };
     window.outlaw = outlaw;
