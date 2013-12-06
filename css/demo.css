@@ -35,6 +35,9 @@ p {
     word-spacing:2px;
 }
 
+.imgSmall {
+    width: 100%;
+}
 
 .footer {
     border:0px;
