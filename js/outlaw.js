@@ -1,37 +1,36 @@
 // Main toggle for image
-$(document).ready(function () {
-    $('.imgSmall').click(function () {
-        $(this).toggleClass('imgSmall');
-        $(this).toggleClass('imgLarge');
-    });
-});
+;(function($) {
+    "use strict";
+    var outlaw = function (target) {
 
-// Off click function
-$('body').click(function (event) {
-    if (!$(event.target).closest('.imgLarge').length) {
-        $('.imgLarge').removeClass().addClass('imgSmall');
-    }
-});
+        var alt = 'large',
+            $window = $(window),
+            $body = $('body'),
+            $overlay = $(document.createElement('div')).addClass('outlaw-overlay').hide();
+        
+        target = target || '.imgSmall';
 
-// Disable scrolling once zoomed in
-$('.imgSmall').click(function (event) {
-    $("body").toggleClass('stop-scrolling');
-});
+        var $targetImgs = $(target);
+        $targetImgs.filter(':first').before($overlay);
 
-// Centers image perfectly
-function resize() {
-    if ($(".imgSmall").height() <= $(window).height()) {
-        $(".imgSmall")
-            .height($(window).height())
-            .width($(window).height() * 1.5);
-    }
-    $(".imgSmall").find();
-    $(".imgSmall").center();
-}
-
-$(document).ready(function () {
-    resize();
-});
-$(window).resize(function () {
-    resize();
-});
+        $targetImgs.each(function(index){
+            var $this = $(this);
+            $this.addClass('outlaw');
+            $this.click(function () {
+                var $this = $(this);
+                $overlay.toggle();
+                $this.toggleClass(alt);
+                // Disable scrolling once zoomed in
+                $body.toggleClass('stop-scrolling');
+            });
+            
+            // Off click function
+            $body.click(function (event) {
+                if (!$(event.target).closest('.outlaw.large').length) {
+                    $('outlaw-large').removeClass('large');
+               }
+            });
+        });
+    };
+    window.outlaw = outlaw;
+})(jQuery);
